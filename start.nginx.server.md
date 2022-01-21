@@ -45,9 +45,7 @@ But for now let's focus on containers.
 OK now we're going to start a new container and use some Docker commands to
 manage that container.
 
-docker container run
-
-publish 80:80 nginx.
+docker container run --publish 80:80 nginx.
 
 Don't worry if you don't know what all that means. We'll go through it all in a
 minute.
@@ -98,9 +96,7 @@ And every time you run a new container you get a new unique ID.
 So if we go back over to our browser and hit refresh a couple of times you can
 see that it's still running.
 
-So let's do a command to list our containers. docker container
-
-ls
+So let's do a command to list our containers: docker container ls
 
 And you'll see the one that's still running here.
 
@@ -109,10 +105,9 @@ container still running
 
 that we just started.
 
-So let's stop that container real quick.
+So let's stop that container real quick: docker container stop. 
 
-docker container stop. Then the container ID. For the container ID I only have
-to type the first
+Then the container ID. For the container ID I only have to type the first
 
 few digits, enough for it to be unique, and I stopped it.
 
